@@ -1,0 +1,7 @@
+<hi>出品商品一覧</hi>
+
+<ul>
+  <% @items.each do |item| %>
+    <li><a href="/items/<%= item.id %>"><%= item.name %></a></li>
+  <% end %>
+</ul>
